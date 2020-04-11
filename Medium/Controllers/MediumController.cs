@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Microsoft.Extensions.DependencyInjection;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Medium.Helper;
 
 namespace Medium.Controllers
 {
@@ -26,9 +25,34 @@ namespace Medium.Controllers
         }
 
         [HttpGet]
+        [Route("GetAll")]
         public bool GetAll()
         {
             return true;
+        }
+
+        [HttpGet]
+        [Route("UnHandleError")]
+        public string UnHandleError()
+        {
+            int x = 0;
+            int t = 10 / x;
+
+            return t.ToString();
+        }
+
+        [HttpGet]
+        [Route("HandleError")]
+        public string HandleError()
+        {
+            int mediumStoryCount = 0;
+
+            if (mediumStoryCount == 0)
+            {
+                throw new MediumApiException("Minimum 1 tane yayınlanmış hikayeniz olmak zorundadır");
+            }
+
+            return mediumStoryCount.ToString();
         }
     }
 }

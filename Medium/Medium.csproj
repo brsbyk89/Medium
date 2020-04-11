@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Medium.Business.Contracts\Medium.Business.Contracts.csproj" />
     <ProjectReference Include="..\Medium.Business\Medium.Business.csproj" />
+    <ProjectReference Include="..\Medium.Common\Medium.Common.csproj" />
     <ProjectReference Include="..\Medium.Data\Medium.Data.csproj" />
   </ItemGroup>
 
