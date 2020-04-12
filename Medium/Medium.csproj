@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Medium.Business.Contracts\Medium.Business.Contracts.csproj" />
     <ProjectReference Include="..\Medium.Business\Medium.Business.csproj" />
+    <ProjectReference Include="..\Medium.Client.Entities\Medium.Client.Entities.csproj" />
     <ProjectReference Include="..\Medium.Common\Medium.Common.csproj" />
     <ProjectReference Include="..\Medium.Data\Medium.Data.csproj" />
   </ItemGroup>

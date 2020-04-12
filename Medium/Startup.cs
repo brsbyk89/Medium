@@ -22,6 +22,11 @@ namespace Medium
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+
+            services.AddOptions();
+
+
             #region BusinessLayer
             services.AddScoped<IMediumEngine, MediumEngine>();
             #endregion
@@ -30,7 +35,6 @@ namespace Medium
             services.AddScoped<IMediumRepository, MediumRepository>();
             #endregion
 
-            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

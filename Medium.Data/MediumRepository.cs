@@ -1,13 +1,11 @@
-﻿using Medium.Data.Contracts;
+﻿using Medium.Business.Entities;
+using Medium.Data.Contexts;
+using Medium.Data.Contracts;
 using System;
 
 namespace Medium.Data
 {
-    public class MediumRepository : IMediumRepository
+    public class MediumRepository : MongoRepository<Story, MongoContext>, IMediumRepository
     {
-        public string Add()
-        {
-            return "Veri tabanına ilk veriniz eklenmiştir";
-        }
     }
 }
