@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Medium.Business.Entities;
 
 namespace Medium.Data.Contracts
 {
-    public interface IMediumRepository
+    public interface IMediumRepository : IMongoRepository<Story>
     {
-       public string Add();
     }
 }

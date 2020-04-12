@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium", "Medium\Medium.csproj", "{25513287-1871-42BA-BAA6-593F2501F9F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium", "Medium\Medium.csproj", "{25513287-1871-42BA-BAA6-593F2501F9F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Business", "Medium.Business\Medium.Business.csproj", "{094131E6-7C62-43E2-A30A-86A8DF81EAC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium.Business", "Medium.Business\Medium.Business.csproj", "{094131E6-7C62-43E2-A30A-86A8DF81EAC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Business.Contracts", "Medium.Business.Contracts\Medium.Business.Contracts.csproj", "{A06C3E1F-B13F-44D5-9C10-1793ABC436C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium.Business.Contracts", "Medium.Business.Contracts\Medium.Business.Contracts.csproj", "{A06C3E1F-B13F-44D5-9C10-1793ABC436C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Data", "Medium.Data\Medium.Data.csproj", "{2619B44F-E7DA-4CD6-85EC-D59B636616CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium.Data", "Medium.Data\Medium.Data.csproj", "{2619B44F-E7DA-4CD6-85EC-D59B636616CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Data.Contracts", "Medium.Data.Contracts\Medium.Data.Contracts.csproj", "{076AF84F-11B3-4DEC-875D-61D4E8DAB2EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium.Data.Contracts", "Medium.Data.Contracts\Medium.Data.Contracts.csproj", "{076AF84F-11B3-4DEC-875D-61D4E8DAB2EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Common", "Medium.Common\Medium.Common.csproj", "{7F9D2FCF-4FC9-472B-9ECB-0DD230A4D438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium.Common", "Medium.Common\Medium.Common.csproj", "{7F9D2FCF-4FC9-472B-9ECB-0DD230A4D438}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Medium.Client.Entities", "Medium.Client.Entities\Medium.Client.Entities.vbproj", "{1FED9177-4CA8-45BB-8274-5C29D66E51B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium.Business.Entities", "Medium.Business.Entities\Medium.Business.Entities.csproj", "{06F1CF3E-AC9F-4C3D-B942-EC23527EAE75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Business.Entities", "Medium.Business.Entities\Medium.Business.Entities.csproj", "{06F1CF3E-AC9F-4C3D-B942-EC23527EAE75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium.Client.Entities", "Medium.Client.Entities\Medium.Client.Entities.csproj", "{09C993F8-CB1E-43C6-B552-522AB996D060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +49,14 @@ Global
 		{7F9D2FCF-4FC9-472B-9ECB-0DD230A4D438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F9D2FCF-4FC9-472B-9ECB-0DD230A4D438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F9D2FCF-4FC9-472B-9ECB-0DD230A4D438}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1FED9177-4CA8-45BB-8274-5C29D66E51B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FED9177-4CA8-45BB-8274-5C29D66E51B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FED9177-4CA8-45BB-8274-5C29D66E51B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FED9177-4CA8-45BB-8274-5C29D66E51B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06F1CF3E-AC9F-4C3D-B942-EC23527EAE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06F1CF3E-AC9F-4C3D-B942-EC23527EAE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06F1CF3E-AC9F-4C3D-B942-EC23527EAE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06F1CF3E-AC9F-4C3D-B942-EC23527EAE75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C993F8-CB1E-43C6-B552-522AB996D060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C993F8-CB1E-43C6-B552-522AB996D060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C993F8-CB1E-43C6-B552-522AB996D060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C993F8-CB1E-43C6-B552-522AB996D060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

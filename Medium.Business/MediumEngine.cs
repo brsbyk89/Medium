@@ -2,7 +2,8 @@
 using Medium.Data.Contracts;
 using System;
 using Microsoft.Extensions.DependencyInjection;
-
+using Medium.Client.Entities;
+using Medium.Business.Entities;
 
 namespace Medium.Business
 {
@@ -13,9 +14,18 @@ namespace Medium.Business
         {
             _serviceProvider = serviceProvider;
         }
-        public string Add()
+
+        public bool AddStory(AddStoryRequest request)
         {
-            return _serviceProvider.GetService<IMediumRepository>().Add();
+            var story = new Story()
+            {
+                Description = request.Description,
+                Title = request.Title
+            };
+
+            var result = _serviceProvider.GetService<IMediumRepository>().Create(story).Id;
+
+            return result != 0;
         }
     }
 }

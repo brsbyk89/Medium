@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Medium.Business.Contracts\Medium.Business.Contracts.csproj" />
+    <ProjectReference Include="..\Medium.Business.Entities\Medium.Business.Entities.csproj" />
     <ProjectReference Include="..\Medium.Data.Contracts\Medium.Data.Contracts.csproj" />
   </ItemGroup>
 

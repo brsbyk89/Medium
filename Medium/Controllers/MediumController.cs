@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using Microsoft.Extensions.DependencyInjection;
 using Medium.Helper;
+using Medium.Client.Entities;
 
 namespace Medium.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
-    public class MediumController : Controller
+    public class MediumController : ControllerBase
     {
         IServiceProvider _serviceProvider { get; set; }
 
@@ -16,12 +18,11 @@ namespace Medium.Controllers
             _serviceProvider = serviceProvider;
         }
 
-        // GET: api/<controller>
         [HttpPost]
-        [Route("Add")]
-        public string Add()
+        [Route("AddStory")]
+        public bool AddStory(AddStoryRequest request)
         {
-            return _serviceProvider.GetService<IMediumEngine>().Add();
+            return _serviceProvider.GetService<IMediumEngine>().AddStory(request);
         }
 
         [HttpGet]
